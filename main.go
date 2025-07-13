@@ -30,7 +30,7 @@ func NewChart(scope constructs.Construct, id string, ns string, appLabel string)
 				Spec: &k8s.PodSpec{
 					Containers: &[]*k8s.Container{{
 						Name:  jsii.String("app-container"),
-						Image: jsii.String("nginx:1.28"),
+						Image: jsii.String("nginx:1.29"),
 						Ports: &[]*k8s.ContainerPort{{
 							ContainerPort: jsii.Number(80),
 						}},
